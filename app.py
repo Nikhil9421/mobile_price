@@ -42,7 +42,7 @@ def predicted_price_class():
 
         result = get_predicted_price_class(battery_power, blue, clock_speed, dual_sim, fc,four_g, int_memory, m_dep,mobile_wt,n_cores,pc,px_height,px_width,ram,sc_h,sc_w,talk_time,three_g,touch_screen,wifi)
         price = {0: '10-16k', 1: '18-24k', 2: '25-30k', 3: '30-35k'}
-        print(result)
+        print("price",result)
     return render_template('index.html', prediction=f"{[result]}")
     #return render_template('index.html')    
     #prediction=f"{price[result]}"
